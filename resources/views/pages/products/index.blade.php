@@ -31,7 +31,7 @@
                                             <td>Rp {{ number_format($item->price, 0, ",",",") }}</td>
                                             <td>{{ $item->quantity }}</td>
                                             <td>
-                                                <img src="http://127.0.0.1:8000/storage/{{$item->photo}}" alt=""/>
+                                                <img src="{{asset('storage/'.$item->photo)}}" alt=""/>
                                             </td>
                                             <td>
                                                 {{-- <a href="{{ route('products.gallery', $item->id) }}" class="btn btn-info btn-sm">
